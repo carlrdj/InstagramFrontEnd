@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rdj.carl.instagram.view.PictureDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ablAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image"
+                android:transitionName="@string/picture_transition"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"/>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/picture_detail_linearlayour_paddingtop"
+            android:paddingBottom="@dimen/picture_detail_linearlayour_paddingbottom">
+
+
+
+            <TextView
+                android:id="@+id/tvUsernameDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/picture_detail_nickname_textview_textsize"
+                android:text="Carlos RDJ"
+                android:paddingLeft="@dimen/picture_detail_paddingleft"
+                android:paddingRight="@dimen/picture_detail_paddingright"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/picture_detail_linearlayour_paddingbottom"
+                android:paddingLeft="@dimen/picture_detail_paddingleft"
+                android:paddingRight="@dimen/picture_detail_paddingright">
+
+                <TextView
+                    android:id="@+id/tvLikeNumberDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/picture_detail_normal_textview_textview"
+                    android:text="10"/>
+
+                <TextView
+                    android:id="@+id/tvSecondWordDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/picture_detail_normal_textview_textview"
+                    android:layout_marginLeft="@dimen/picture_detail_marginleft"
+                    android:text="Me gusta"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/tvTitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/picture_detail_title_textview_textview"
+                android:text="Todo copas en la playa"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/picture_detail_linearlayour_paddingtop"
+                android:paddingBottom="@dimen/picture_detail_linearlayour_paddingbottom"
+                />
+            <TextView
+                android:id="@+id/tvTextDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/picture_detail_normal_textview_textview"
+                android:text="Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas , las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum."
+                android:layout_gravity="center_horizontal"
+                android:paddingRight="@dimen/picture_detail_paddingleft"
+                android:paddingLeft="@dimen/picture_detail_paddingright"/>
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/ablAppBarLayout"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@drawable/heart"/>
+</android.support.design.widget.CoordinatorLayout>

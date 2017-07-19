@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.roughike.bottombar.BottomBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bBottomBar"
+    android:layout_width="@dimen/bottombar_width"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:background="@color/colorPrimary"
+    app:bb_inActiveTabColor="@color/White"
+    app:bb_activeTabColor="@color/White"
+    app:bb_tabXmlResource="@xml/tabs"
+    app:bb_tabletMode="true"
+    />

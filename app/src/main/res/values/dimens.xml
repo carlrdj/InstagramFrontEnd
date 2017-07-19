@@ -1,0 +1,41 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="login_linearlayout_paddingleft">22dp</dimen>
+    <dimen name="login_linearlayout_paddingright">22dp</dimen>
+    <dimen name="login_edittext_maginbottom">7dp</dimen>
+    <dimen name="login_edittext_textsize">20sp</dimen>
+    <dimen name="login_textview_marginleft">7dp</dimen>
+    <dimen name="login_button_padding">20dp</dimen>
+    <dimen name="login_buttonn_textsize">18sp</dimen>
+
+    <dimen name="create_account_edittext_maginbottom">7dp</dimen>
+    <dimen name="create_account_edittext_textsize">20sp</dimen>
+    <dimen name="create_account_button_padding">20dp</dimen>
+    <dimen name="create_account_button_textsize">18sp</dimen>
+    <dimen name="create_account_linearlayout_padding">20dp</dimen>
+
+    <dimen name="picture_cardview_nickname_textview_textsize">20sp</dimen>
+    <dimen name="picture_cardview_time_ago_textview_textsize">15sp</dimen>
+    <dimen name="picture_cardview_time_number_textview_textsize">15sp</dimen>
+    <dimen name="picture_cardview_time_number_textview_paddingleft">6dp</dimen>
+    <dimen name="picture_cardview_likes_words_textview_paddingleft">6dp</dimen>
+    <dimen name="picture_cardview_likes_number_textview_paddingleft">6dp</dimen>
+    <dimen name="picture_cardview_linearlayout_padding">10dp</dimen>
+
+    <dimen name="fragment_home_recyclerview_paddingleft">10dp</dimen>
+    <dimen name="fragment_home_recyclerview_paddingright">10dp</dimen>
+
+    <dimen name="picture_detail_nickname_textview_textsize">22sp</dimen>
+    <dimen name="picture_detail_linearlayour_paddingtop">10dp</dimen>
+    <dimen name="picture_detail_linearlayour_paddingbottom">10dp</dimen>
+    <dimen name="picture_detail_paddingleft">15dp</dimen>
+    <dimen name="picture_detail_paddingright">15dp</dimen>
+    <dimen name="picture_detail_marginleft">6dp</dimen>
+    <dimen name="picture_detail_normal_textview_textview">14sp</dimen>
+    <dimen name="picture_detail_title_textview_textview">16sp</dimen>
+    <dimen name="profile_nickname_textview_textsize">30sp</dimen>
+    <dimen name="profile_circuleimageview">160dp</dimen>
+    <dimen name="profile_elevation">10dp</dimen>
+
+    <dimen name="bottombar_width">60dp</dimen>
+</resources>

@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LoginEditText" parent="TextAppearance.AppCompat">
+        <item name="colorControlNormal">@color/White</item>
+        <item name="colorControlActivated">@color/White</item>
+        <item name="colorAccent">@color/White</item>
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:textColorHint">@color/White</item>
+        <item name="android:layout_marginBottom">@dimen/login_edittext_maginbottom</item>
+        <item name="android:textSize">@dimen/login_edittext_textsize</item>
+    </style>
+
+    <style name="LoginButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:padding">@dimen/login_button_padding</item>
+        <item name="android:textSize">@dimen/login_buttonn_textsize</item>
+    </style>
+
+    <style name="CreateAccountEditText">
+        <item name="colorControlNormal">@color/Grey600</item>
+        <item name="colorControlActivated">@color/Grey600</item>
+        <item name="colorAccent">@color/Grey600</item>
+        <item name="android:textColorHint">@color/Grey600</item>
+        <item name="android:textColorPrimary">@color/Grey800</item>
+        <item name="android:layout_marginBottom">@dimen/create_account_edittext_maginbottom</item>
+        <item name="android:textSize">@dimen/create_account_edittext_textsize</item>
+    </style>
+
+    <style name="CreateAccountButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:padding">@dimen/create_account_button_padding</item>
+        <item name="android:textSize">@dimen/create_account_button_textsize</item>
+    </style>
+</resources>
